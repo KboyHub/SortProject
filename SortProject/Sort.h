@@ -26,4 +26,7 @@
 -(void)insertSortWithArray:(NSArray *)data;
 
 
+//***=================数组去重=================***//
+- (void)detelRepeatedElementFromArray:(NSArray *)array;
+
 @end

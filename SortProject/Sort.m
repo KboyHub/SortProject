@@ -93,7 +93,20 @@
 }
 
 
-
+//***=================数组去重=================***//
+- (void)detelRepeatedElementFromArray:(NSArray *)array{
+    // 利用字典键字唯一来去重
+    NSMutableDictionary *MulDic = [NSMutableDictionary dictionary];
+    for (id  number in array)
+    {
+        [MulDic setObject:number forKey:number];
+    }
+    NSLog(@"%@",[MulDic allValues]);
+//    // 利用集合键字唯一来去重
+//    NSSet *set = [NSSet setWithArray:array];
+//    NSLog(@"%@",[set allObjects]);
+    
+}
 
 
 

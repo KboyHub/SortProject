@@ -27,8 +27,8 @@ int main(int argc, const char * argv[]) {
 //        NSLog(@"快速排序后的数据：%@",[data description]);
 //        [sort bunbleSortWithArray:data];//冒泡排序
 //        [sort selectSortWithArray:data];//选择排序
-//        [sort insertSortWithArray:data];//插入排序
-        
+        [sort insertSortWithArray:data];//插入排序
+        [sort detelRepeatedElementFromArray:data];
     }
     return 0;
 }
