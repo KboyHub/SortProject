@@ -125,6 +125,7 @@
     NSArray *resultArray2 = [allKeys sortedArrayUsingComparator:sort];
     NSString *sign = @"";
     for (NSString *key in resultArray2) {
+        if([dic[key] isEqualToString:@""]||[dic[key] isKindOfClass:[NSNull class]])break;
         sign = [NSString stringWithFormat:@"%@&%@=%@",sign,key,dic[key]];
     }
     NSLog(@"%@",sign);

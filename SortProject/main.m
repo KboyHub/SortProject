@@ -24,7 +24,7 @@ int main(int argc, const char * argv[]) {
         dic[@"Addd"]= @"123";
         dic[@"ab"]= @"123456";
         dic[@"Ias"]= @"1245";
-        dic[@"sss"]= @"124547";
+        dic[@"sss"]= @"";
         
         Sort *sort = [[Sort alloc] init];
 //        [sort quickSortWithData:data leftIndex:0 rightIndex:data.count-1];//快速排序
