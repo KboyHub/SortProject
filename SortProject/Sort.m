@@ -108,7 +108,7 @@
     
 }
 
-
+//***=================数组字符串排序 ascii升序=================***//
 - (NSString *)sortDic:(NSMutableDictionary *)dic{
     
     NSArray *allKeys = [dic allKeys];
@@ -123,13 +123,12 @@
         
     };
     NSArray *resultArray2 = [allKeys sortedArrayUsingComparator:sort];
-    NSString *sign = @"";
+    NSString *sign = @"Source=98";
     for (NSString *key in resultArray2) {
         if([dic[key] isEqualToString:@""]||[dic[key] isKindOfClass:[NSNull class]])break;
         sign = [NSString stringWithFormat:@"%@&%@=%@",sign,key,dic[key]];
     }
-    NSLog(@"%@",sign);
-    return [[[sign substringFromIndex:1] md5]md5];
+    return [[[[sign md5] uppercaseString]md5]uppercaseString];
    
 }
 

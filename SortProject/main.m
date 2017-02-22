@@ -21,10 +21,8 @@ int main(int argc, const char * argv[]) {
 //            [data addObject:num];
 //        }
         NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-        dic[@"Addd"]= @"123";
-        dic[@"ab"]= @"123456";
-        dic[@"Ias"]= @"1245";
-        dic[@"sss"]= @"";
+        dic[@"upid"]=@"sayd";
+        dic[@"Timestamp"]=@"2017-02-16 18:29:59.409";
         
         Sort *sort = [[Sort alloc] init];
 //        [sort quickSortWithData:data leftIndex:0 rightIndex:data.count-1];//快速排序
