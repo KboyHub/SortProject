@@ -29,4 +29,8 @@
 //***=================数组去重=================***//
 - (void)detelRepeatedElementFromArray:(NSArray *)array;
 
+//***=================数组字符串排序 ascii升序=================***//
+- (NSString *)sortDic:(NSMutableDictionary *)dic;
+
+
 @end

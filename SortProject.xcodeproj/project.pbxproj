@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B223440E1E5A8ACB00CF7F7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B223440D1E5A8ACB00CF7F7D /* main.m */; };
 		B22344161E5A8AE800CF7F7D /* Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = B22344151E5A8AE800CF7F7D /* Sort.m */; };
+		B2F5F7C11E5D7A1C0005C4FA /* NSString+Password.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F5F7C01E5D7A1C0005C4FA /* NSString+Password.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		B223440D1E5A8ACB00CF7F7D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B22344141E5A8AE800CF7F7D /* Sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
 		B22344151E5A8AE800CF7F7D /* Sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sort.m; sourceTree = "<group>"; };
+		B2F5F7BF1E5D7A1C0005C4FA /* NSString+Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Password.h"; sourceTree = "<group>"; };
+		B2F5F7C01E5D7A1C0005C4FA /* NSString+Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Password.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				B223440D1E5A8ACB00CF7F7D /* main.m */,
+				B2F5F7BF1E5D7A1C0005C4FA /* NSString+Password.h */,
+				B2F5F7C01E5D7A1C0005C4FA /* NSString+Password.m */,
 				B22344141E5A8AE800CF7F7D /* Sort.h */,
 				B22344151E5A8AE800CF7F7D /* Sort.m */,
 			);
@@ -125,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2F5F7C11E5D7A1C0005C4FA /* NSString+Password.m in Sources */,
 				B223440E1E5A8ACB00CF7F7D /* main.m in Sources */,
 				B22344161E5A8AE800CF7F7D /* Sort.m in Sources */,
 			);
@@ -255,6 +261,7 @@
 				B22344131E5A8ACB00CF7F7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

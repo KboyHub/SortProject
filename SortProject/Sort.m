@@ -7,6 +7,7 @@
 //
 
 #import "Sort.h"
+#import "NSString+Password.h"
 
 @implementation Sort
 
@@ -84,7 +85,6 @@
 }
 
 
-
 //交换元素位置
 -(void)swapWithData:(NSMutableArray *)Data index1:(NSInteger)index1 index2:(NSInteger)index2{
     NSNumber *tmp = [Data objectAtIndex:index1];
@@ -107,6 +107,32 @@
 //    NSLog(@"%@",[set allObjects]);
     
 }
+
+
+- (NSString *)sortDic:(NSMutableDictionary *)dic{
+    
+    NSArray *allKeys = [dic allKeys];
+    NSStringCompareOptions comparisonOptions =NSCaseInsensitiveSearch|NSNumericSearch|
+    
+    NSWidthInsensitiveSearch|NSForcedOrderingSearch;
+    
+    NSComparator sort = ^(NSString *obj1,NSString *obj2){
+        
+        NSRange range =NSMakeRange(0,obj1.length);
+        return [obj1 compare:obj2 options:comparisonOptions range:range];
+        
+    };
+    NSArray *resultArray2 = [allKeys sortedArrayUsingComparator:sort];
+    NSString *sign = @"";
+    for (NSString *key in resultArray2) {
+        sign = [NSString stringWithFormat:@"%@&%@=%@",sign,key,dic[key]];
+    }
+    NSLog(@"%@",sign);
+    return [[[sign substringFromIndex:1] md5]md5];
+   
+}
+
+
 
 
 
